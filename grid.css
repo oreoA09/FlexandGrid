@@ -1,0 +1,23 @@
+/* Styling CSS Grid  */
+body{
+	width: 60%;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-areas:
+    'header header header header right right'
+    'menu menu menu main main main'
+    'menu menu menu footer footer footer';
+  gap: 10px;
+  background-color: #000000;
+  padding: 10px;
+}
+
+.item1 { grid-area: header; padding: 20px 0; height: 100px; background-color: yellow;}
+.item2 { grid-area: right; padding: 20px 0; height: 100px; background-color: blue;}
+.item3 { grid-area: menu; padding: 20px 0; background-color: green; }
+.item4 { grid-area: main; padding: 20px 0; height: 40px; background-color: red;}
+.item5 { grid-area: footer; padding: 20px 0; height: 60px; background-color: red;}
+
+

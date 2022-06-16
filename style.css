@@ -1,0 +1,85 @@
+:root{
+	--orange: hsl(31, 77%, 52%);
+	--cyan: hsl(184, 100%, 22%);
+	--darkCyan: hsl(179, 100%, 13%);
+	--white: hsla(0, 0%, 100%, 0.75);
+	--gray: hsl(0, 0%, 95%);
+	--ffOne: 'Big Shoulders Display', cursive;
+  --ffTwo: 'Lexend Deca', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+	margin: 0;
+	padding: 0;
+	font-size: 15px;
+display: flex;
+	justify-content: center;
+	align-items: center; 
+	background: black;
+}
+
+.container{
+	background: var(--gray);
+	display: flex;
+	flex-direction: row;
+	justify-self: center;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 50px 100px;
+	width: auto;
+}
+
+.card{
+	width: 150px;
+	height: 300px;
+	margin:  0;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: flex-start;
+}
+
+.one{
+	background: var(--orange);
+	color: var(--orange);
+	border-radius: 15px 0 0 15px;
+}
+.two{
+	background: var(--cyan);
+	color: var(--cyan);
+}
+.third{
+	background: var(--darkCyan);
+	color: var(--darkCyan);
+	border-radius: 0 15px 15px 0;
+}
+
+.card h1{
+	color: var(--gray);
+	font-family: var(--ffOne);
+}
+
+.card p{
+	color: var(--white);
+	font-family: var(--ffTwo);
+}
+
+.lower{
+margin-top: 20px;
+}
+
+.lower button{
+	padding: 5px 10px;
+	border: 1px solid var(--gray);
+	border-radius: 25px;
+	background: var(--gray);
+	color: inherit;
+	font-family: var(--ffTwo);
+}
+
+/*End of FlexBox  */
+
